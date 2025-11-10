@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema de Login</title>
+</head>
+<body>
+  {% if user.is_authenticated %}
+    <p>Bem-vindo, {{ user.username }} | <a href="{% url 'logout' %}">Sair</a></p>
+  {% endif %}
+  <hr>
+  {% block content %}{% endblock %}
+</body>
+</html>
