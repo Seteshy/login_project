@@ -223,7 +223,3 @@ Arthur Lima Pereira
 Disciplina: Engenharia de Software
 
 RA: 133275
-
----
-
-# TESTE APRESENTAÇÃO
