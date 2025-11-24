@@ -3,4 +3,8 @@
 <h2>Perfil</h2>
 <p>Usuário: {{ user.username }}</p>
 <p>Email: {{ user.email }}</p>
+<div class="menu">
+    <a href="{% url 'lista_produtos' %}">🛍️ Produtos</a><br>
+    <a href="{% url 'ver_carrinho' %}">🛒 Meu Carrinho</a>
+</div>
 {% endblock %}
