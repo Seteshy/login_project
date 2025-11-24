@@ -1,0 +1,14 @@
+<h2>Meu Carrinho</h2>
+
+<ul>
+  {% for item in itens %}
+    <li>
+      {{ item.produto.nome }} — Quantidade: {{ item.quantidade }}
+      <a href="{% url 'remover_do_carrinho' item.id %}">Remover</a>
+    </li>
+  {% empty %}
+    <li>O carrinho está vazio.</li>
+  {% endfor %}
+</ul>
+
+<a href="{% url 'lista_produtos' %}">Voltar à lista de produtos</a>

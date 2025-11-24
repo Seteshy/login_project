@@ -1,0 +1,10 @@
+<h2>Criar Produto</h2>
+
+<form method="post">
+  {% csrf_token %}
+  Nome: <input type="text" name="nome"><br>
+  Preço: <input type="number" name="preco" step="0.01"><br>
+  Descrição: <textarea name="descricao"></textarea><br>
+
+  <button type="submit">Salvar</button>
+</form>

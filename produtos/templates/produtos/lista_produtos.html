@@ -1,0 +1,14 @@
+<h2>Lista de Produtos</h2>
+
+<a href="{% url 'criar_produto' %}">Adicionar Produto</a>
+<a href="{% url 'ver_carrinho' %}">Ver Carrinho</a>
+
+<ul>
+  {% for p in produtos %}
+  <li>
+    {{ p.nome }} - R$ {{ p.preco }}
+    <a href="{% url 'adicionar_ao_carrinho' p.id %}">Adicionar ao carrinho</a>
+    <a href="{% url 'deletar_produto' p.id %}">Excluir</a>
+  </li>
+  {% endfor %}
+</ul>
