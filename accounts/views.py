@@ -11,7 +11,7 @@ def login_user(request):
         user = authenticate(request, username=username, password=password)
         if user:
             login(request, user)
-            return redirect('profile')
+            return redirect('lista_produtos')
         else:
             messages.error(request, 'Usuário ou senha incorretos.')
     return render(request, 'accounts/login.html')
