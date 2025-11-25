@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #f7fffb;
 }
 
 .navbar {
@@ -16,7 +16,7 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .navbar a {
@@ -36,6 +36,57 @@ body {
     width: 80%;
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc;
+}
+
+/* Caixa do Login */
+
+.login-container {
+    background: white;
+    width: 380px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Login */
+
+.input-login {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.input-login:focus {
+    border-color: #0074ff;
+    outline: none;
+}
+
+/* BOTÃO PRINCIPAL */
+.btn-full {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.login-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-links a {
+    text-decoration: none;
+    color: #0074ff;
+    font-weight: bold;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
 }
 
 /* Lista de Produtos */
