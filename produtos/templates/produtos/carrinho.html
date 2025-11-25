@@ -1,15 +1,39 @@
-<h2>Meu Carrinho</h2>
+{% extends 'base.html' %}
 
-<ul>
-  {% for item in itens %}
-    <li>
-      {{ item.produto.nome }} — Quantidade: {{ item.quantidade }}
-      <a href="{% url 'remover_do_carrinho' item.id %}">Remover</a>
-      <a href="{% url 'remover_do_carrinho_unid' item.id %}">Remover Unidade</a>
-    </li>
-  {% empty %}
-    <li>O carrinho está vazio.</li>
-  {% endfor %}
-</ul>
+{% block title %}Meu Carrinho{% endblock %}
 
-<a href="{% url 'lista_produtos' %}">Voltar à lista de produtos</a>
+{% block content %}
+<div class="carrinho-container">
+
+    <h2 class="titulo-pagina">Meu Carrinho</h2>
+
+    <div class="lista-carrinho">
+        {% for item in itens %}
+        <div class="carrinho-card">
+            <h3>{{ item.produto.nome }}</h3>
+
+            <p class="quantidade">
+                Quantidade: <strong>{{ item.quantidade }}</strong>
+            </p>
+
+            <div class="card-acoes">
+                <a href="{% url 'remover_do_carrinho_unid' item.id %}" class="btn btn-secundario">
+                    ➖ Remover 1 unidade
+                </a>
+
+                <a href="{% url 'remover_do_carrinho' item.id %}" class="btn btn-perigo">
+                    ❌ Remover Produto
+                </a>
+            </div>
+        </div>
+        {% empty %}
+        <p class="carrinho-vazio">O carrinho está vazio.</p>
+        {% endfor %}
+    </div>
+
+    <div class="acoes-finais">
+        <a href="{% url 'lista_produtos' %}" class="btn btn-primario">← Voltar aos Produtos</a>
+    </div>
+
+</div>
+{% endblock %}
