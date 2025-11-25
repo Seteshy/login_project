@@ -5,6 +5,7 @@
     <li>
       {{ item.produto.nome }} — Quantidade: {{ item.quantidade }}
       <a href="{% url 'remover_do_carrinho' item.id %}">Remover</a>
+      <a href="{% url 'remover_do_carrinho_unid' item.id %}">Remover Unidade</a>
     </li>
   {% empty %}
     <li>O carrinho está vazio.</li>

@@ -58,6 +58,16 @@ def remover_do_carrinho(request, item_id):
     return redirect('ver_carrinho')
 
 @login_required
+def remover_do_carrinho_unid(request, item_id):
+    item = get_object_or_404(ItemCarrinho, id=item_id)
+    if item.quantidade > 1:
+        item.quantidade -= 1
+        item.save()
+    else:
+        item.delete()
+    return redirect('ver_carrinho')
+
+@login_required
 def ver_carrinho(request):
     carrinho, _ = Carrinho.objects.get_or_create(usuario=request.user)
     itens = ItemCarrinho.objects.filter(carrinho=carrinho)
