@@ -40,8 +40,8 @@ Além da parte técnica, o repositório foi estruturado com:
 ### 1️⃣ Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/sistema-login-django.git
-cd sistema-login-django
+git clone https://github.com/Seteshy/login_project.git
+cd login_project
 ```
 
 ### 2️⃣ Crie e ative o ambiente virtual:
