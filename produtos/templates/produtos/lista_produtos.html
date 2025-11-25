@@ -1,15 +1,44 @@
-<h2>Lista de Produtos</h2>
+{% extends 'base.html' %}
 
-<a href="{% url 'criar_produto' %}">Adicionar Produto</a>
-<a href="{% url 'ver_carrinho' %}">Ver Carrinho</a>
-<a href="{% url 'profile' %}">Ver Perfil</a>
+{% block title %}Produtos{% endblock %}
 
-<ul>
-  {% for p in produtos %}
-  <li>
-    {{ p.nome }} - R$ {{ p.preco }}
-    <a href="{% url 'adicionar_ao_carrinho' p.id %}">Adicionar ao carrinho</a>
-    <a href="{% url 'deletar_produto' p.id %}">Excluir</a>
-  </li>
-  {% endfor %}
-</ul>
+{% block content %}
+<h2 class="titulo-pagina">Produtos Disponíveis</h2>
+
+<div class="acoes-topo">
+    <a href="{% url 'criar_produto' %}" class="btn btn-primario">➕ Adicionar Produto</a>
+    <a href="{% url 'ver_carrinho' %}" class="btn btn-secundario">🛒 Ver Carrinho</a>
+    <a href="{% url 'profile' %}" class="btn btn-secundario">👤 Perfil</a>
+</div>
+
+<div class="lista-produtos">
+    {% for p in produtos %}
+    <div class="produto-card">
+        <h3>{{ p.nome }}</h3>
+
+        <p class="preco">
+            R$ {{ p.preco }}
+        </p>
+
+        {% if p.descricao %}
+        <p class="descricao">
+            {{ p.descricao }}
+        </p>
+        {% endif %}
+
+        <div class="card-acoes">
+            <a href="{% url 'adicionar_ao_carrinho' p.id %}" class="btn btn-primario" onclick="produtoAdicionado()">
+                🛒 Adicionar ao carrinho
+            </a>
+
+            <a href="{% url 'deletar_produto' p.id %}" class="btn btn-perigo">
+                🗑️ Excluir
+            </a>
+        </div>
+    </div>
+    {% empty %}
+        <p>Nenhum produto cadastrado ainda.</p>
+    {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Sistema{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h1 class="logo">TechFlow Solutions</h1>
+    <ul>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'lista_produtos' %}">Produtos</a></li>
+        <li><a href="{% url 'ver_carrinho' %}">Carrinho</a></li>
+        <li><a href="{% url 'logout' %}">Sair</a></li>
+        {% else %}
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'register' %}">Registrar</a></li>
+        {% endif %}
+    </ul>
+</nav>
+
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
