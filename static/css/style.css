@@ -228,6 +228,192 @@ body {
     background: #8e0000;
 }
 
+/* Caixa Criar Produto */
+
+.produto-form-container {
+    background: #ffffff;
+    width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Título Criar Produto*/
+
+.produto-form-container .titulo-pagina {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Formulário e Labels Criar Produto*/
+
+.produto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.produto-form label {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Inputs e Textarea Criar Produto*/
+
+.input-form {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.input-form:focus {
+    border-color: #0074ff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 116, 255, 0.4);
+}
+
+.textarea-form {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+.textarea-form:focus {
+    border-color: #0074ff;
+    outline: none;
+}
+
+/* Botões Criar Produto */
+
+.textarea-form {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+.textarea-form:focus {
+    border-color: #0074ff;
+    outline: none;
+}
+
+/* Links Criar Produto */
+
+.produto-form-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Caixa Lista Produto */
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+/* Card de Produto */
+
+.produto-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    transition: 0.2s;
+    position: relative;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Nome, Preco e Descrição do Produto */
+
+.produto-nome {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.produto-preco {
+    margin: 8px 0;
+    color: #0074ff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0 15px;
+}
+
+/* Ações do Card Produtos */
+
+.card-acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Mensagem de quando não há Produtos*/
+
+.msg-vazio {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Botões Produto */
+
+.btn {
+    text-align: center;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-primario {
+    background: #0074ff;
+    color: white;
+}
+
+.btn-primario:hover {
+    background: #005fcc;
+}
+
+.btn-secundario {
+    background: #444;
+    color: white;
+}
+
+.btn-secundario:hover {
+    background: #222;
+}
+
+.btn-perigo {
+    background: #c62828;
+    color: white;
+}
+
+.btn-perigo:hover {
+    background: #8e0000;
+}
+
 /* Caixa Carrinho */
 
 .carrinho-container {

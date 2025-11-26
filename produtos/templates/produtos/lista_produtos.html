@@ -14,20 +14,20 @@
 <div class="lista-produtos">
     {% for p in produtos %}
     <div class="produto-card">
-        <h3>{{ p.nome }}</h3>
+        <h3 class="produto-nome">{{ p.nome }}</h3>
 
-        <p class="preco">
+        <p class="produto-preco">
             R$ {{ p.preco }}
         </p>
 
         {% if p.descricao %}
-        <p class="descricao">
+        <p class="produto-descricao">
             {{ p.descricao }}
         </p>
         {% endif %}
 
         <div class="card-acoes">
-            <a href="{% url 'adicionar_ao_carrinho' p.id %}" class="btn btn-primario" onclick="produtoAdicionado()">
+            <a href="{% url 'adicionar_ao_carrinho' p.id %}" class="btn btn-primario">
                 🛒 Adicionar ao carrinho
             </a>
 
@@ -37,7 +37,7 @@
         </div>
     </div>
     {% empty %}
-        <p>Nenhum produto cadastrado ainda.</p>
+    <p class="msg-vazio">Nenhum produto cadastrado ainda.</p>
     {% endfor %}
 </div>
 

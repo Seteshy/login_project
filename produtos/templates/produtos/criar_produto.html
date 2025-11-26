@@ -1,10 +1,32 @@
-<h2>Criar Produto</h2>
+{% extends 'base.html' %}
 
-<form method="post">
-  {% csrf_token %}
-  Nome: <input type="text" name="nome"><br>
-  Preço: <input type="number" name="preco" step="0.01"><br>
-  Descrição: <textarea name="descricao"></textarea><br>
+{% block title %}Criar Produto{% endblock %}
 
-  <button type="submit">Salvar</button>
-</form>
+{% block content %}
+<div class="produto-form-container">
+
+    <h2 class="titulo-pagina">Criar Produto</h2>
+
+    <form method="post" class="produto-form">
+        {% csrf_token %}
+
+        <label for="nome">Nome do Produto</label>
+        <input type="text" name="nome" id="nome" class="input-form" required>
+
+        <label for="preco">Preço</label>
+        <input type="number" name="preco" id="preco" step="0.01" class="input-form" required>
+
+        <label for="descricao">Descrição</label>
+        <textarea name="descricao" id="descricao" class="textarea-form" rows="4"></textarea>
+
+        <button type="submit" class="btn btn-primario btn-full">
+            Salvar Produto
+        </button>
+    </form>
+
+    <div class="produto-form-links">
+        <a href="{% url 'lista_produtos' %}" class="btn btn-secundario">← Voltar</a>
+    </div>
+
+</div>
+{% endblock %}
