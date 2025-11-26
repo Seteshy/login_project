@@ -415,3 +415,218 @@ body {
 .register-links a:hover {
     text-decoration: underline;
 }
+
+/* Caixa Reset de Senha */
+
+.reset-container {
+    background: #ffffff;
+    width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Texto Explicativo Reset Senha */
+
+.texto-explicativo {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* Formulário Reset Senha */
+
+.reset-form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.reset-form label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.reset-form input {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.reset-form input:focus {
+    border-color: #0074ff;
+    outline: none;
+}
+
+/* Botão Reset Senha */
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-primario {
+    background: #0074ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-primario:hover {
+    background: #005fcc;
+}
+
+/* Caixa Reset Senha Feito */
+
+.reset-container {
+    background: #ffffff;
+    width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Texto Explicativo Reset Senha Feito */
+
+.texto-explicativo {
+    color: #555;
+    margin: 20px 0 30px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Botão Voltar Reset Senha Feito */
+
+.reset-links {
+    margin-top: 20px;
+}
+
+.btn-secundario {
+    background: #444;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn-secundario:hover {
+    background: #222;
+}
+
+/* Caixa Reset Senha Confirm */
+
+.reset-container {
+    background: #ffffff;
+    width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Texto Explicativo Reset Senha Confirm */
+
+.texto-explicativo {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* Formulário Reset Senha Confirm */
+
+.reset-form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.reset-form label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.reset-form input {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.reset-form input:focus {
+    border-color: #0074ff;
+    outline: none;
+}
+
+/* Botão Senha Reset Confirm */
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-primario {
+    background: #0074ff;
+    color: white;
+    border-radius: 6px;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-primario:hover {
+    background: #005fcc;
+}
+
+/* Caixa Senha Reset Complete */
+
+.reset-container {
+    background: #ffffff;
+    width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Texto Explicativo Senha Reset Complete */
+
+.texto-explicativo {
+    color: #555;
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Botão Senha Reset Complete */
+
+.reset-links {
+    margin-top: 25px;
+}
+
+.btn-primario {
+    background: #0074ff;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn-primario:hover {
+    background: #005fcc;
+}
