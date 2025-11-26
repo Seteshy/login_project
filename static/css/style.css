@@ -247,8 +247,7 @@ body {
     gap: 25px;
 }
 
-/**/
-/* CARD DO PRODUTO NO CARRINHO */
+/* Card do Produto no Carrinho */
 .carrinho-card {
     width: 260px;
     padding: 20px;
@@ -268,14 +267,14 @@ body {
     margin: 12px 0;
 }
 
-/* BOTÕES DENTRO DO CARD */
+/* Botões dentro do Card de Carrinho */
 .card-acoes {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/* MENSAGEM DE CARRINHO VAZIO */
+/* Mensagem de Carrinho Vazio */
 .carrinho-vazio {
     text-align: center;
     font-size: 18px;
@@ -283,7 +282,7 @@ body {
     margin: 25px 0;
 }
 
-/* BOTÕES FINAIS (Voltar aos produtos) */
+/* Botões Finais Carrinho (Voltar aos produtos) */
 .acoes-finais {
     margin-top: 30px;
     text-align: center;
@@ -297,7 +296,7 @@ body {
     text-decoration: none;
 }
 
-/* cores */
+/* Cores Botão Carrinho */
 .btn-primario {
     background: #0074ff;
     color: white;
@@ -311,4 +310,108 @@ body {
 .btn-perigo {
     background: #c62828;
     color: white;
+}
+
+/* Caixa Registrar */
+
+.register-container {
+    background: #ffffff;
+    width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização dos Campos do Forms Registro */
+
+.register-container .titulo-pagina {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.register-form {
+    width: 100%;
+}
+
+.input-form {
+    width: 90%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+
+.input-form:focus {
+    border-color: #0074ff;
+    box-shadow: 0 0 4px rgba(0, 116, 255, 0.4);
+    outline: none;
+}
+
+.register-form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.register-form label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.register-form ul {
+    margin: 10px 0 15px 20px;
+    padding: 0;
+    color: #444;
+    font-size: 14px;
+}
+
+.register-form li {
+    margin-bottom: 4px;
+}
+
+/* Botão Estilizado Registro */
+
+.btn-full {
+    width: 100%;
+    padding: 12px;
+}
+
+.btn-primario {
+    background: #0074ff;
+    color: white;
+    border-radius: 6px;
+    padding: 12px 10px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primario:hover {
+    background: #005fcc;
+}
+
+
+/* Links finais Registro */
+
+.register-links {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.register-links a {
+    color: #0074ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-links a:hover {
+    text-decoration: underline;
 }
